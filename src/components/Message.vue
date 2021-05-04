@@ -1,11 +1,13 @@
 <template>
   <div>
-      <p>Message</p>
+    <p>Hola</p>
+      <p>hola {{message.user}}</p>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Message'
+    name: 'Message',
+    props: ['message']
   }
 </script>
