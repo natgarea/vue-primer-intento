@@ -34,3 +34,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 <b-modal> provides several accessibility features, including auto focus, return focus, keyboard (tab) focus containment, and automated aria-* attributes.
 
 https://bootstrap-vue.org/docs/components/modal#accessibility
+
+## Utilizados
+
+1. BootstrapVue https://bootstrap-vue.org/
+1. Librería Moment.js https://momentjs.com/

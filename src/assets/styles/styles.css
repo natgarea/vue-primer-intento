@@ -1,0 +1,27 @@
+.arrow-right {
+    display: inline-block;
+    align-self: center;
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+
+    border-left: 5px solid #0275d8;
+}
+
+.arrow-left {
+    display: inline-block;
+    align-self: center;
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+
+    border-right:5px solid #f8f9fa;
+}
+
+/* #attachment-version {}
+
+#attachment-title {}
+
+#attachment-file-data {} */

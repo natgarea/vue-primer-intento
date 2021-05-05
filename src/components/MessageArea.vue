@@ -1,10 +1,7 @@
 <template>
   <div>
-    <p>{{messages.length}}</p>
       <div v-for="(message, index) of messages" :key="index">
-        <p>{{index}} - {{message.user}}</p>
-        <Message :message="message"/>
-        
+        <Message :message="message" :index="index"/>
       </div>
   </div>
 </template>
