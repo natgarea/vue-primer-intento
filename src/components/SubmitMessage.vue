@@ -1,36 +1,45 @@
 <template>
-  <div class="">
-       <div class="d-flex justify-content-between py-2 px-5">
-          <div>
-            <textarea :value="messageContent" @keyup.enter="updateContent"></textarea>
-          </div>
-          <div>
-            <p class="h1"><b-icon-arrow-right-circle-fill variant="primary" @click="updateContent">
-              </b-icon-arrow-right-circle-fill></p>
-          </div>
-        </div>
+  <div>
+    <form>
+      <b-row class="py-2 px-5">
+          <b-col md="11" class="p-0 mt-1">
+            <b-form-input type="text" v-model="messageContent"></b-form-input>
+          </b-col>
+          <b-col md="1">
+              <b-button variant="link" class="border-0 p-0">
+                <p class="h1 mb-0">
+                  <b-icon-arrow-right-circle-fill variant="primary" @click="sendMessage">
+                  </b-icon-arrow-right-circle-fill>
+                </p>
+              </b-button>
+          </b-col>
+      </b-row>
+    </form>
   </div>
 </template>
 
 <script>
-  import {mapState, mapMutations, mapActions} from 'vuex';
+  import {mapMutations, mapActions} from 'vuex';
 
   export default {
     name: 'SubmitMessage',
     computed: {
-      ...mapState({
-        messageContent: state => state.messageContent
-      })
+      messageContent: {
+        get () {
+          return this.$store.state.messageContent
+        },
+        set (value) {
+          this.$store.commit('updateContent', value)
+          console.log(this.messageContent)
+        }
+      }
     },
     methods: {
-      ...mapMutations(['setMessage']),
-      ...mapActions(['sendMessage']),
-      ...mapMutations(['loadMessages']),
-      ...mapActions(['getMessages']),
-      updateContent (e) {
-          this.$store.commit('updateContent', e.target.value)
-          this.sendMessage()
-      }
+      ...mapMutations(['setMessage', 'loadMessages']),
+      ...mapActions(['sendMessage', 'getMessages']),
+        updateContent(e) {
+          this.$store.commit("updateContent",e.target.value);
+        }
     },
     updated() {
       this.getMessages()

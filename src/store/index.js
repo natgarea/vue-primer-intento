@@ -25,15 +25,14 @@ export default new Vuex.Store({
       },
       updateContent (state, content) {
         state.messageContent = content
-
       }
   },
   actions: {
     getMessages: function({ commit }) {
       commit('loadMessages', preloadedMessages)
     },
-    sendMessage: function({ commit }) {
-      commit('setMessage', this.state.messageContent)
+    sendMessage: function({ commit, state }) {
+      commit('setMessage', state.messageContent)
     }
   },
   modules: {
