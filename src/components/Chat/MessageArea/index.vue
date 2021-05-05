@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import Message from '@/components/Message.vue'
+  import Message from '@/components/Chat/MessageArea/Message.vue'
   import {mapState, mapMutations, mapActions} from 'vuex';
 
   export default {

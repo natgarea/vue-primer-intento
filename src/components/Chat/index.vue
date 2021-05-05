@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import MessageArea from '@/components/MessageArea.vue'
-  import SubmitMessage from '@/components/SubmitMessage.vue'
+  import MessageArea from '@/components/Chat/MessageArea'
+  import SubmitMessage from '@/components/Chat/SubmitMessage'
 
 
   export default {
