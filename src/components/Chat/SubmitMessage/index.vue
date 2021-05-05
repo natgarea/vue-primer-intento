@@ -44,7 +44,6 @@
     updated() {
       this.getMessages()
     }
-    // no tienen un hr sino un border
 
   }
 </script>

@@ -1,14 +1,16 @@
 <template>
-  <div class="container p-5">
-    <b-button v-b-modal.modal-1>Abrir modal</b-button>
+  <div>
+
+    <b-button v-b-modal.modal-1c variant="primary" class="m-5"><h1>Chat</h1></b-button>
 
     <b-modal
       id="modal-1"
       size="lg"
-      title="Comentarios"
+      title-html="Comentarios"
       centered hide-footer>
       <Chat />
     </b-modal>
+
   </div>
 </template>
 
