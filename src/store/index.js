@@ -9,9 +9,9 @@ export default new Vuex.Store({
     messages: []
   },
   mutations: {
-    loadMessages(state, messagesAction) {
-      state.messages = messagesAction;
-    }
+      loadMessages(state, messagesAction) {
+        state.messages = messagesAction;
+      },
   },
   actions: {
     getMessages: function({ commit }) {

@@ -13,14 +13,14 @@
        "user":"student",
        "logged_as_user":true,
        "timestamp":"December 28, 2018 14:45:05",
-       "message":"Buenas tardes, acabo de subir el primer archivo con el caso práctico, espero revisión."
+       "content":"Buenas tardes, acabo de subir el primer archivo con el caso práctico, espero revisión."
     },
     {
        "attachment":false,
        "user":"tutor",
        "logged_as_user":false,
        "timestamp":"December 29, 2018 10:11:00",
-       "message":"¡Gran trabajo Silvia! Pero creo que deberías revisar el punto 3. Intenta añadir un poco más de contexto y un apartado final de conclusiones personales."
+       "content":"¡Gran trabajo Silvia! Pero creo que deberías revisar el punto 3. Intenta añadir un poco más de contexto y un apartado final de conclusiones personales."
     },
     {
        "attachment":true,
@@ -36,13 +36,13 @@
        "user":"student",
        "logged_as_user":true,
        "timestamp":"December 30, 2018 08:22:05",
-       "message":"Realizados los cambios según feedback."
+       "content":"Realizados los cambios según feedback."
     },
     {
        "attachment":false,
        "user":"tutor",
        "logged_as_user":false,
        "timestamp":"December 30, 2018 15:25:00",
-       "message":"Perfecto, excelente trabajo."
+       "content":"Perfecto, excelente trabajo."
     }
  ]

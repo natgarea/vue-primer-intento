@@ -28,7 +28,7 @@
       ...mapMutations(['loadMessages']),
       ...mapActions(['getMessages'])
     },
-    mounted() {
+    created() {
       this.getMessages()
     }
   }
